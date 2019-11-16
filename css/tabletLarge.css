@@ -1,63 +1,41 @@
-/* Home page */
-
-p {
-  font-size: 0.8rem !important;
+/* Main-Header */
+#main-header {
+  height: 43vh;
 }
 
-#main-header .header {
-  height: 50vh;
-  overflow-y: scroll;
+/* Services  */
+
+#service .our-goals {
+  padding: 2.5rem 1rem;
 }
 
-#main-header .header-image img {
-  width: 100%;
-  margin: 2rem 0;
+/* Statistic */
+
+#stat {
+  height: 20vh;
 }
 
-#about-us .card1-image {
-  height: 50%;
+/* Blog */
+
+#blog .blog-services .service-content .s-content {
+  right: 12rem;
 }
 
-#about-us .card2-content,
-#about-us .card1-content {
-  font-size: 0.7rem;
+#blog .blog-services .experience-content .e-content {
+  left: 12rem;
 }
 
-#latest-news .news .news-image img {
-  width: 100%;
+#blog .blog-services .strategy-content .b-content {
+  right: 12rem;
 }
 
-#latest-news .news .news-content p {
-  padding: 0;
-  line-height: 1.2;
+#blog .content {
+  max-width: 450px;
+  padding: 1.5rem;
 }
 
-#latest-news .news .news-content h2 {
-  padding: 0.5rem 0;
-}
-
-#latest-news .news .news-content .btn {
-  margin-top: 0.5rem;
-}
-
-/* About Page */
-
-#other-header {
-  height: 10vh;
-}
-
-/* Service Page */
-
-#services .services-items .border-bottom {
-  width: 19rem;
-}
-
-#order .card .card-content {
-  font-size: 0.7rem;
-}
-
-/* contactus Page */
+/* map */
 
 #map {
-  height: 30vh;
+  height: 25vh;
 }

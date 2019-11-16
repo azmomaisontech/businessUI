@@ -12,7 +12,7 @@
     />
 
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto|Staatliches|Teko&display=swap"
       rel="stylesheet"
     />
 
@@ -29,427 +29,529 @@
     />
     <link
       rel="stylesheet"
+      media="screen and (max-width: 740px)"
+      href="css/hamburger.css"
+    />
+
+    <link
+      rel="stylesheet"
       media="screen and (max-width: 550px)"
       href="css/mobile.css"
     />
-    <link
-      rel="stylesheet"
-      media="screen and (max-height: 420px)"
-      href="css/landscape.css"
-    />
-    <title>Moses Restaurant</title>
+    <link rel="stylesheet" href="css/landScape.css" />
+
+
+    <title>Azmo</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav id="main-navbar">
-      <!-- Desktop Nav Bar -->
-      <div class="contact">
-        <div class="container">
-          <div>
-            <span>
-              <i class="far fa-envelope-open"></i>
-              info@Example.com
-            </span>
-            <span> <i class="fas fa-mobile-alt"></i> Call Us +12 345 678</span>
+    <!-- Header -->
+    <header id="main-header">
+      <!-- DESKTOP NavBar -->
+      <nav id="main-nav">
+        <div class="nav-content">
+          <div class="main-logo">
+            <a href="index.html">B</a>
           </div>
-          <div>Mon - Sun : 8:30 am To 9:30pm</div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
         </div>
-      </div>
 
-      <div class="navbar">
-        <div class="container">
-          <div class="main-icon">
-            <h1>
-              <a href="index.html"> <i class="fas fa-utensils"></i> Crispy</a>
-            </h1>
+        <div class="nav-search">
+          <form>
+            <input type="text" placeholder="Search" />
+            <button><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+      <!-- MOBILE NAV BAR -->
+      <nav id="mobile-nav-bar">
+        <div class="nav-icons bg-white">
+          <div class="mobile-logo bg-primary">
+            <a class="text-white" href="index.html">B</a>
           </div>
+        </div>
+        <input type="checkbox" name="toggle" id="toggle" />
+        <label for="toggle" class="btn menu-on">Menu</label>
+        <div id="nav-list" class="nav-list  bg-gray">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="nav-search">
+          <form>
+            <input type="text" placeholder="Search" />
+            <button><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
 
-          <div class="navbar-list">
+      <!-- Header Content -->
+      <div class="container">
+        <div class="header-content">
+          <div class="social-icons">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contactUs.html">Contact Us</a></li>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"> <i class="fab fa-twitter"></i> </a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-rss"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="far fa-envelope"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
             </ul>
           </div>
-
-          <div class="call-us">
-            <a class="btn bg-nav" href="#">CALL US</a>
-          </div>
-        </div>
-      </div>
-      <!-- MOBILE NAV BAR -->
-      <div class="mobile-nav-bar">
-        <div class="mobile-icon">
-          <h1>
-            <a href="index.html"> <i class="fas fa-utensils"></i> Crispy</a>
-          </h1>
-        </div>
-        <div class="menu-wrap">
-          <input type="checkbox" class="toggler" />
-          <div class="hamburger"><div></div></div>
-          <div class="menu">
+          <div class="details">
             <div>
-              <div>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="contactUs.html">Contact Us</a></li>
-                </ul>
-              </div>
+              <h3 class="small-heading py-1 ls">Best Services</h3>
+              <h2 class="large-heading text-primary py-1">
+                <span class="text-white">With</span> Biz-Pro
+              </h2>
             </div>
           </div>
-        </div>
-      </div>
-    </nav>
-    <!-- header -->
-    <header id="main-header">
-      <div class="container">
-        <div class="header">
-          <div class="header-content">
-            <h3>Delicious & Crispy <span class="txt-bold"> Recipes.</span></h3>
-            <p>
-              Onec Consequat Sapien Ut Leo Cursus Rhoncus. Nullam Dui Mi,
-              Vulputate Ac Metus Semper Nullam Dui Mi. Vestibulum Ante Ipsum
-              Primis In Faucibus Orci Luctus Et Ultrices Posuere Cubilia Curae.
+          <div class="link-tags">
+            <p class="py-1 text-gray">
+              <span><i class="fas fa-arrow-right"></i> </span>
+              <span> Lorem ipsum dolor sit </span>
             </p>
-            <a href="about.html" class="btn bg-dark">Read More</a>
-            <a href="contactUs.html" class="btn bg-primary">Contact Us</a>
-          </div>
-
-          <div class="header-image">
-            <img src="img/banner.jpg" alt="" />
+            <p class="py-1 text-gray">
+              <span><i class="fas fa-arrow-right"></i> </span>
+              <span> Sed do eiusmod tempor </span>
+            </p>
+            <p class="py-1 text-gray">
+              <span><i class="fas fa-arrow-right"></i> </span>
+              <span> Amet Lorem ipsum dolor </span>
+            </p>
           </div>
         </div>
       </div>
     </header>
-
-    <!-- About us -->
-    <section id="about-us">
+    <!-- Section: About Us -->
+    <section id="about" class="py-4">
       <div class="container">
-        <div class="heading">
-          <h3 class="l-heading">About Us</h3>
-          <div class="heading-border"></div>
-        </div>
-
-        <div class="card1">
-          <div class="card1-content">
-            <h4 class="m-heading">Enjoy The Greatest Pleasure In Our Hotel!</h4>
+        <div class="about-items">
+          <div class="about-contents">
             <p>
-              Suspendisse id felis sed felis tincidunt finibus. Nulla sed justo
-              tellus. Donec ut felis ante. Quisque ac sapien quis orci pulvinar
-              finibus quis eu urna. onec consequat sapien ut leo cursus rhoncus.
-              Nullam dui mi, vulputate ac metus semper Nullam dui mi. Vestibulum
-              ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-              Curae; Curabitur quis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh
+              urna Lorem ipsum dolor sit amet, consectetur
             </p>
-            <div class="icons">
-              <div>
-                <i class="fas fa-birthday-cake fa-2x"></i>
-                <h5 class="s-heading">HEALTHY</h5>
+            <div class="company-dept mt-4">
+              <div class="department bg-gray">
+                <div class="icons text-blue">
+                  <i class="fas fa-share"></i>
+                </div>
+                <div class="dept-names ">
+                  <h3 class="small-heading">Features</h3>
+                </div>
               </div>
-              <div>
-                <i class="fas fa-rocket fa-2x"></i>
-                <h5 class="s-heading">SPICY & HOT</h5>
+              <div class="department bg-gray">
+                <div class="icons text-blue">
+                  <i class="fas fa-desktop"></i>
+                </div>
+                <div class="dept-names">
+                  <h3>Interface</h3>
+                </div>
               </div>
-              <div>
-                <i class="fas fa-utensils fa-2x"></i>
-                <h5 class="s-heading">CRUNCHY</h5>
+              <div class="department bg-gray">
+                <div class="icons text-blue">
+                  <i class="far fa-lightbulb"></i>
+                </div>
+                <div class="dept-names">
+                  <h3>Creative</h3>
+                </div>
               </div>
-              <div>
-                <i class="fas fa-coffee fa-2x"></i>
-                <h5 class="s-heading">RECIEPE</h5>
+              <div class="department bg-gray">
+                <div class="icons text-blue">
+                  <i class="far fa-money-bill-alt"></i>
+                </div>
+                <div class="dept-names">
+                  <h3>Marketting</h3>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card1-image">
-            <img src="img/banner1.jpg" alt="meal" />
-          </div>
-        </div>
-
-        <div class="card2">
-          <div class="card2-image">
-            <img src="img/bg.jpg" alt="Meal" />
-          </div>
-          <div class="card2-content">
-            <h4 class="m-heading">
-              A Tasty And Healthy Crispy That We Serve For You.
-            </h4>
-            <p>
-              Suspendisse id felis sed felis tincidunt finibus. Nulla sed in
-              justo inter tellus. Donec ut felis ante. Quisque acin sapien quis
-              orci pulvinar finibus quis urna. onec consequat sapien ut leo
-              cursus rhoncus. Nullam dui mi, vulputate ac quis eu urna Quisque
-              quis eu urna lorem elit.
-            </p>
-            <p>
-              Quisque ac sapien quis orci pulvinar finibus quis eu urna Quisque
-              Suspendisse id felis sed felis tincidunt finibus. Nulla sed justo
-              tellus. Donec ut felis ante ipsum.
-            </p>
+          <div class="about-image">
+            <h3 class="large-heading">
+              <span class="text-primary">About</span>
+              <span>Company</span>
+            </h3>
+            <img src="./images/blog2.jpg" alt="User" />
           </div>
         </div>
       </div>
     </section>
-    <!-- What we do : Service -->
-    <section id="service">
-      <div class="container">
+    <!-- Section: Services -->
+    <section id="service" class="bg-gray">
+      <div class="our-goals">
         <div class="heading">
-          <h3 class="l-heading">What We Do</h3>
-          <div class="heading-border"></div>
-        </div>
-        <div class="card-group">
-          <div class="card">
-            <h4 class="m-heading">Service1</h4>
-            <p>
-              Service1 Vestibulum ante ipsum primiss sed inorc faucibus orcit
-              luctus ipsum et ultrices sede edt posuere cubiliater Curae nisl,
-              Curabit ur quis luctu.
-            </p>
-          </div>
-          <div class="card">
-            <h4 class="m-heading">Service2</h4>
-            <p>
-              Service1 Vestibulum ante ipsum primiss sed inorc faucibus orcit
-              luctus ipsum et ultrices sede edt posuere cubiliater Curae nisl,
-              Curabit ur quis luctu.
-            </p>
-          </div>
-          <div class="card">
-            <h4 class="m-heading">Service3</h4>
-            <p>
-              Service1 Vestibulum ante ipsum primiss sed inorc faucibus orcit
-              luctus ipsum et ultrices sede edt posuere cubiliater Curae nisl,
-              Curabit ur quis luctu.
-            </p>
-          </div>
-          <div class="card">
-            <h4 class="m-heading">Service4</h4>
-            <p>
-              Service1 Vestibulum ante ipsum primiss sed inorc faucibus orcit
-              luctus ipsum et ultrices sede edt posuere cubiliater Curae nisl,
-              Curabit ur quis luctu.
-            </p>
-          </div>
-          <div class="card">
-            <h4 class="m-heading">Service5</h4>
-            <p>
-              Service1 Vestibulum ante ipsum primiss sed inorc faucibus orcit
-              luctus ipsum et ultrices sede edt posuere cubiliater Curae nisl,
-              Curabit ur quis luctu.
-            </p>
-          </div>
-          <div class="card">
-            <h4 class="m-heading">Service6</h4>
-            <p>
-              Service1 Vestibulum ante ipsum primiss sed inorc faucibus orcit
-              luctus ipsum et ultrices sede edt posuere cubiliater Curae nisl,
-              Curabit ur quis luctu.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section: Testimonials -->
-    <section id="testimony">
-      <div class="container">
-        <div class="heading">
-          <h3 class="l-heading">Testimonials</h3>
-          <div class="heading-border"></div>
-        </div>
-        <div class="testimonials">
-          <div class="testimonial">
-            <div class="card">
-              <i class="fas fa-quote-right"></i>
-              <p>
-                Sed semper leo metus, a lacinia eros ut semper at. Etiam sodales
-                orci sit amet vehicula pellentesque. blandit nec sed tellus. Nam
-                pharetra.
-              </p>
-            </div>
-            <div class="user">
-              <div class="user-image">
-                <img src="img/ser1.jpg" alt="user1" />
-              </div>
-              <div class="user-info">
-                <h3>Mary Jane</h3>
-                <em>- March 3, 2019</em>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial">
-            <div class="card">
-              <i class="fas fa-quote-right"></i>
-              <p>
-                Sed semper leo metus, a lacinia eros ut semper at. Etiam sodales
-                orci sit amet vehicula pellentesque. blandit nec sed tellus. Nam
-                pharetra.
-              </p>
-            </div>
-            <div class="user">
-              <div class="user-image">
-                <img src="img/ser2.jpg" alt="user1" />
-              </div>
-              <div class="user-info">
-                <h3>Mary Jane</h3>
-                <em>- March 3, 2019</em>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial">
-            <div class="card">
-              <i class="fas fa-quote-right"></i>
-              <p>
-                Sed semper leo metus, a lacinia eros ut semper at. Etiam sodales
-                orci sit amet vehicula pellentesque. blandit nec sed tellus. Nam
-                pharetra.
-              </p>
-            </div>
-            <div class="user">
-              <div class="user-image">
-                <img src="img/ser3.jpg" alt="user1" />
-              </div>
-              <div class="user-info">
-                <h3>Mary Jane</h3>
-                <em>- March 3, 2019</em>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section: Latest News -->
-    <section id="latest-news">
-      <div class="container">
-        <div class="heading">
-          <h3 class="l-heading">Latest News</h3>
-          <div class="heading-border"></div>
-        </div>
-
-        <div class="news">
-          <div class="news-image">
-            <img src="img/blog1.jpg" alt="News1" />
-            <h3 class="s-heading blog1">Blog #1</h3>
-          </div>
-          <div class="news-content">
-            <p>March 3, 2019.</p>
-            <h2>Nullam Dui Mi, Vulputate Ac Cursus.</h2>
-            <p>
-              onec consequat sapien ut leo cursus rhoncus. Nullam duit mi,
-              vulputate ac metus semper Nullam dui mi. Vestibulum ante ipsum
-              primis in faucibus orci luctus et ultrices morbi posuere cubilia
-              Curae; Curabitur quis luctus lectus. leo et cursus rhoncus. Nullam
-              dui mi, vulputate cursus.
-            </p>
-            <a class="btn" href="singlePage.html">View Post</a>
-          </div>
-        </div>
-        <div class="news">
-          <div class="news-content">
-            <p>March 3, 2019.</p>
-            <h2>Nullam Dui Mi, Vulputate Ac Cursus.</h2>
-            <p>
-              onec consequat sapien ut leo cursus rhoncus. Nullam duit mi,
-              vulputate ac metus semper Nullam dui mi. Vestibulum ante ipsum
-              primis in faucibus orci luctus et ultrices morbi posuere cubilia
-              Curae; Curabitur quis luctus lectus. leo et cursus rhoncus. Nullam
-              dui mi, vulputate cursus.
-            </p>
-            <a class="btn" href="singlePage.html">View Post</a>
-          </div>
-          <div class="news-image">
-            <img src="img/blog2.jpg" alt="New2" />
-            <h3 class="s-heading blog2">Blog #2</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer id="info">
-      <div class="container">
-        <div class="page-info">
-          <h3 class="m-heading">
-            Eat Healthy And Delivious Crispy From Our Hotel
+          <h3 class="large-heading">
+            <span class="text-primary">Our</span>
+            <span>Goals</span>
           </h3>
-          <p>Call Us To Book Your Table Or To Order Your Food</p>
-          <h3 class="m-heading">+1 123 456 789</h3>
+        </div>
+        <div class="goals">
+          <div class="icons"><i class="fas fa-cubes"></i></div>
+          <div class="service-content">
+            <h3 class="medium-heading text-blue">Building On The Best</h3>
+            <p class="py-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
+            </p>
+          </div>
+        </div>
+        <div class="goals">
+          <div class="icons"><i class="far fa-money-bill-alt"></i></div>
+          <div class="service-content">
+            <h3 class="medium-heading text-blue">Marketing Business Plan</h3>
+            <p class="py-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
+            </p>
+          </div>
+        </div>
+        <div class="goals">
+          <div class="icons"><i class="fas fa-share"></i></div>
+          <div class="service-content">
+            <h3 class="medium-heading text-blue">Strategic Business Plan</h3>
+            <p class="py-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
+            </p>
+          </div>
         </div>
       </div>
-    </footer>
+      <div class="our-goals-image"></div>
+    </section>
+    <!-- Section: Data About Awards -->
+    <section id="stat">
+      <div class="container">
+        <div class="smile">
+          <h3 class="large-heading text-white">700</h3>
+          <h3>Smile</h3>
+        </div>
+        <div class="awards">
+          <h3 class="large-heading  text-white">250 +</h3>
+          <h3>Awards</h3>
+        </div>
+        <div class="coffee">
+          <h3 class="large-heading text-white">150</h3>
+          <h3>Coffee</h3>
+        </div>
+        <div class="tea">
+          <h3 class="large-heading text-white">125</h3>
+          <h3>Tea</h3>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-      <div id="footer-description">
-        <div class="container">
-          <div class="footer-top">
-            <div class="footer-links">
-              <div class="main-icon">
-                <h2><i class="fas fa-utensils"></i> Crispy</h2>
-              </div>
-              <p>
-                Onec Consequat sapien ut cursus rhoncus. Nullam dui mi,
-                vulputate ac metus semper quis luctus sed.
-              </p>
-              <h3>
-                <span class="text-p">Trusted by </span>
-                <span class="text-primary">500+ People</span>
+    <!-- Section: Blog -->
+    <section id="blog" class="py-4">
+      <div class="container">
+        <div class="blog-services">
+          <div class="service-image">
+            <img src="/images/blog1.jpg" alt="Blog" />
+          </div>
+          <div class="service-content">
+            <div class="heading">
+              <h3 class="large-heading">
+                <span class="text-primary">Latest</span>
+                <span>Blog</span>
               </h3>
             </div>
-
-            <div class="address-info">
-              <h2>Address Info</h2>
+            <div class="content s-content bg-gray ">
+              <p>jan 2019/7</p>
+              <h3 class="medium-heading text-blue py-2">
+                High Quality Services
+              </h3>
               <p>
-                <i class="fas fa-map-marker-alt"></i> 64d canal street TT 3356
-                Newyork, NY.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum nibh urna, euismod ut ornare non Lorem ipsum dolor
+                sit amet Lorem ipsum dolor
               </p>
+            </div>
+          </div>
+        </div>
+        <div class="blog-services">
+          <div class="experience-content">
+            <div class=" content e-content  bg-gray">
+              <p>jan 2019/7</p>
+              <h3 class="medium-heading text-blue py-2">
+                Great Customer Experience
+              </h3>
               <p>
-                <i class="far fa-envelope-open"></i>
-                info@Example.com
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum nibh urna, euismod ut ornare non Lorem ipsum dolor
+                sit amet Lorem ipsum dolor
               </p>
-              <p><i class="fas fa-mobile-alt"></i> Call Us +12 345 678</p>
             </div>
-
-            <div class="quicklinks">
-              <h2>Quick Links</h2>
-              <ul>
-                <li><a href="#">Order Online</a></li>
-                <li><a href="#">Healthy Crispy</a></li>
-                <li><a href="#">Support Helpline</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
+          </div>
+          <div class="experience-image">
+            <img src="/images/blog2.jpg" alt="Blog 2" />
+          </div>
+        </div>
+        <div class="blog-services mt-4">
+          <div class="strategy-image">
+            <img src="/images/ab1.jpg" alt="Blog 3" />
+          </div>
+          <div class="strategy-content ">
+            <div class=" content b-content bg-gray ">
+              <p>jan 2019/7</p>
+              <h3 class="medium-heading text-blue py-2">
+                Growth Your Business Strategy
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum nibh urna, euismod ut ornare non Lorem ipsum dolor
+                sit amet Lorem ipsum dolor
+              </p>
             </div>
-
-            <div class="subscribe">
-              <h2>Subscribe Us</h2>
-              <form action="">
-                <p>Subscribe to our newsletter</p>
-                <input type="email" placeholder="Enter your email here" />
-                <button>Subscribe</button>
-              </form>
-              <div class="social-icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-pinterest"></i>
-                <i class="fab fa-google-plus-g"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Projects -->
+    <section id="project" class="bg-gray py-4">
+      <div class="container">
+        <div class="heading">
+          <h3 class="large-heading">
+            <span class="text-primary">New</span>
+            <span>Projects</span>
+          </h3>
+        </div>
+        <div class="projects">
+          <div class="project">
+            <div class="project-half">
+              <div class="project-image">
+                <img src="/images/g1.jpg" alt="Project" />
+              </div>
+              <div class="project-content">
+                <h3 class="medium-heading text-blue py-2">Mobile In Hand</h3>
+                <p>
+                  Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-full">
+              <div class="project-image">
+                <img src="/images/g2.jpg" alt="Project" />
+              </div>
+              <div class="project-content">
+                <h3 class="medium-heading text-blue py-2">
+                  Black Camera & Alarm
+                </h3>
+                <p>
+                  Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-half">
+              <div class="project-image">
+                <img src="/images/g3.jpg" alt="Project" />
+              </div>
+              <div class="project-content">
+                <h3 class="medium-heading text-blue py-2">
+                  Pen Book & Paper Clip
+                </h3>
+                <p>
+                  Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-half">
+              <div class="project-image">
+                <img src="/images/g4.jpg" alt="Project" />
+              </div>
+              <div class="project-content">
+                <h3 class="medium-heading text-blue py-2">
+                  Mobile Books & Pens
+                </h3>
+                <p>
+                  Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-full">
+              <div class="project-image">
+                <img src="/images/g5.jpg" alt="Project" />
+              </div>
+              <div class="project-content">
+                <h3 class="medium-heading text-blue py-2">
+                  Mobile Glasses & Earbuds
+                </h3>
+                <p>
+                  Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-half">
+              <div class="project-image">
+                <img src="/images/g6.jpg" alt="Project" />
+              </div>
+              <div class="project-content">
+                <h3 class="medium-heading text-blue py-2">Two White Bowls</h3>
+                <p>
+                  Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <footer class="footer-bottom">
-          <div class="container">
-            <p>
-              &copy; 2019 Cripsy. All Rights Reserved | Designed by W3layouts |
-              Built by AzmoTech
-            </p>
+      </div>
+    </section>
+
+    <!-- Section: Team Members -->
+    <section id="team" class="py-4">
+      <div class="container">
+        <div class="teams">
+          <div class="team-heading">
+            <div class="heading">
+              <h3 class="large-heading">
+                <span class="text-primary">Brilliant</span>
+                <span class="text-white">Team</span>
+              </h3>
+              <p class="text-gray py-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
+              </p>
+            </div>
           </div>
-          <a href="#main-navbar"><i class="fas fa-angle-up"></i></a>
-        </footer>
+          <div class="team-members">
+            <div class="team-member bg-white">
+              <div class="member-image">
+                <img src="/images/t1.jpg" alt="Team" />
+              </div>
+              <div class="member-name">
+                <h3 class="small-heading text-blue">Moses Aizee</h3>
+                <p>Founder</p>
+              </div>
+            </div>
+            <div class="team-member bg-white">
+              <div class="member-image">
+                <img src="/images/t2.jpg" alt="Team" />
+              </div>
+              <div class="member-name">
+                <h3 class="small-heading text-blue">Barry Karle</h3>
+                <p>Co-Founder</p>
+              </div>
+            </div>
+            <div class="team-member bg-white">
+              <div class="member-image">
+                <img src="/images/t3.jpg" alt="Team" />
+              </div>
+              <div class="member-name">
+                <h3 class="small-heading text-blue">Daisy Deo</h3>
+                <p>Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Google Map -->
+    <section id="map"></section>
+    <!-- Section: Contact Us -->
+    <section id="contact" class="py-4">
+      <div class="container">
+        <div class="heading">
+          <h3 class="large-heading">
+            <span class="text-primary">Get In</span>
+            <span>Touch</span>
+          </h3>
+        </div>
+
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email" />
+            <input type="number" placeholder="Phone Number" />
+          </div>
+          <textarea
+            name="message"
+            id=""
+            rows="11"
+            placeholder="Message"
+          ></textarea>
+          <button class="bg-primary btn">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section: Footer -->
+    <footer id="footer" class="bg-dark">
+      <div class="container">
+        <div class="footer-top py-4">
+          <div class="footer-content">
+            <div class="address">
+              <p>
+                <span>Address : </span>
+                <span>Melbourne St,South Birbane 4101 Nigeria.</span>
+              </p>
+              <p class="py-1">
+                <span>Phone : </span> <span>+234-800-000-0000 </span>
+              </p>
+              <p><span>Email : </span> <span>info@emailaddress.com.ng</span></p>
+            </div>
+            <div class="biz-pro">
+              <h3 class="medium-heading text-primary">Biz-Pro</h3>
+              <p class="mt-1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
+              </p>
+            </div>
+          </div>
+          <div class="navigator mt-2">
+            <a href="#main-header"> <i class="fas fa-arrow-up"></i> </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-white">
+        <p>
+          &copy;2019 Azmo-Tech. All Rights Reserved | Design by W3Layouts |
+          Built by <span class="text-primary">AzmoTech</span>
+        </p>
       </div>
     </footer>
+    <!-- Google Map Script -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApO1-okqOEyZvLZFXyIrQe2UaGkLvcTas&callback=initMap"
+      async
+      defer
+    ></script>
+
+    <script src="app.js"></script>
   </body>
 </html>

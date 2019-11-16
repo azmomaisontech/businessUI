@@ -1,101 +1,162 @@
-/* Home page */
-
-.heading {
-  margin: 2rem;
+@media (max-height: 1024px) {
+  #main-header {
+    height: 65vh;
+  }
 }
 
-.l-heading {
-  font-size: 2rem;
-  line-height: 1;
-}
-p {
-  font-size: 0.8rem !important;
+@media (max-height: 768px) {
+  #main-header {
+    height: 75vh;
+  }
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-size: 1rem;
+@media (max-height: 768px) {
+  #main-header {
+    height: 75vh;
+  }
 }
 
-.m-heading {
-  font-size: 1.3rem;
-}
+@media (max-height: 414px) {
+  #main-nav {
+    display: none;
+  }
 
-#main-header .header {
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 115vh;
-}
+  #mobile-nav-bar {
+    display: grid;
+    transition: 1s ease-in;
+  }
 
-#main-header .header-image {
-  display: none;
-}
-#main-header .header-image img {
-  width: 100%;
-  margin: 2rem 0;
-}
+  #mobile-nav-bar .nav-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+  #mobile-nav-bar .nav-icons .mobile-logo {
+    padding: 0.5rem 1rem;
+    font-size: 2.5rem;
+  }
 
-#about-us .card1-content .icons h5 {
-  margin-right: 4rem;
-}
+  /* hamburger handler */
+  #mobile-nav-bar #toggle {
+    display: none;
+  }
 
-#about-us .card1-content i {
-  margin-right: 4rem;
-}
+  #mobile-nav-bar .btn {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    background: var(--primary-color);
+    padding: 0.6rem 1rem;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 0.9rem;
+    z-index: 10;
+  }
 
-#about-us .card2-content,
-#about-us .card1-content {
-  font-size: 0.7rem;
-}
+  #mobile-nav-bar #toggle:checked ~ .nav-list {
+    display: block;
+  }
 
-#about-us .card2-image {
-  width: 60%;
-}
+  /* End */
 
-#latest-news .news .news-image img {
-  width: 100%;
-}
+  #mobile-nav-bar .nav-list {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 9;
+  }
 
-#latest-news .news .news-content p {
-  padding: 0;
-  line-height: 1.2;
-}
+  #mobile-nav-bar .nav-list ul {
+    padding: 1rem 0;
+  }
 
-#latest-news .news .news-content h2 {
-  padding: 0.5rem 0;
-}
+  #mobile-nav-bar .nav-list li {
+    padding: 0.6rem 0;
+  }
 
-#latest-news .news .news-content .btn {
-  margin-top: 0.5rem;
-}
+  #mobile-nav-bar .nav-list li a {
+    color: black;
+  }
 
-/* About Page */
+  #mobile-nav-bar .nav-list li:hover a {
+    color: var(--primary-color);
+  }
 
-#other-header {
-  height: 10vh;
-}
+  #mobile-nav-bar .nav-search {
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    z-index: 2;
+    background: white;
+  }
 
-/* Service Page */
+  #mobile-nav-bar .nav-search input {
+    padding: 0.4rem;
+    font-size: 1rem;
+    width: 80%;
+    outline: none;
+    border: none;
+  }
+  #mobile-nav-bar .nav-search button {
+    border: none;
+    background: var(--primary-color);
+    width: 20.1%;
+    padding: 1rem;
+    margin-left: -5px;
+  }
+  /* Header */
+  #main-header {
+    height: 150vh;
+    overflow-y: scroll;
+  }
 
-#services .services-items {
-  grid-template-columns: 1fr;
-}
+  /* Stat */
 
-#services .services-items .border-bottom {
-  width: 19rem;
-}
+  #stat {
+    height: 50vh;
+  }
 
-#order .card .card-content {
-  font-size: 0.7rem;
-}
+  #stat .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+  /* Blog */
+  #blog .blog-services {
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+  }
 
-/* contactus Page */
+  #blog .content {
+    max-width: 700px;
+    position: relative;
+  }
 
-#map {
-  height: 60vh;
+  #blog .blog-services .service-content .s-content {
+    right: 0;
+    left: 0;
+  }
+
+  #blog .blog-services .experience-content .e-content {
+    left: 0;
+    right: 0;
+    margin-top: 1rem;
+  }
+
+  #blog .blog-services .strategy-content .b-content {
+    right: 0;
+    left: 0;
+    margin-top: 1rem;
+  }
+
+  #blog .blog-services .experience-image {
+    margin-top: 1rem;
+  }
+
+  #blog .blog-services img {
+    width: 100%;
+  }
+
+  #map {
+    height: 55vh;
+  }
 }
