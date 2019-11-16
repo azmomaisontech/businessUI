@@ -6,18 +6,3 @@ function initMap() {
     zoom: 8
   });
 }
-
-// Hamburger Menu
-
-// const hamburgerButton = document
-//   .getElementById("hamburger")
-//   .addEventListener("click", hideList);
-
-// function hideList() {
-//   const navList = document.getElementById("nav-list");
-//   if (navList.style.display === "none") {
-//     navList.style.display === "grid";
-//   } else {
-//     navList.style.display === "none";
-//   }
-// }
